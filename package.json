@@ -9,7 +9,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "node husky.js"
+      "pre-push": "branch=$(git rev-parse --abbrev-ref HEAD) && if [[ $branch != features* ]]; then echo 'Error: Only branches starting with \"features/\" are allowed.' && exit 1; fi"
     }
   },
   "devDependencies": {
