@@ -7,9 +7,15 @@
     "dev": "webpack-dev-server --mode development",
     "build": "webpack --mode production"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "node husky.js"
+    }
+  },
   "devDependencies": {
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.2",
     "node-sass": "^8.0.0",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
