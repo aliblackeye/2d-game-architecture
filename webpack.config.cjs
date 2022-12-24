@@ -1,7 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 // const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
 module.exports = {
   // Girdi dosyası. Bu dosya, Webpack tarafından derleme işlemine başlanacak olan dosyadır.
   entry: "./src/index.ts",

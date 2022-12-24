@@ -5,10 +5,14 @@
     "module": "esnext",
     "moduleResolution": "node",
     "target": "es5",
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "noImplicitAny": false,
-    "suppressImplicitAnyIndexErrors": true
+    "incremental": true,
+    "isolatedModules": false,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "lib": ["dom", "dom.iterable", "esnext"]
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "public"]
