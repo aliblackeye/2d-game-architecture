@@ -1,4 +1,4 @@
 // Import Scripts
-import "./scripts/game.ts";
+import "./scripts/game";
 // Import Styles
 import "./styles/main.scss";

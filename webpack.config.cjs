@@ -28,7 +28,7 @@ module.exports = {
       // TypeScript dosyalarını işleyecek olan modül.
       {
         test: /\.ts$/,
-        use: "ts-loader",
+        use: ["babel-loader", "ts-loader"],
         exclude: /node_modules/,
       },
 
@@ -39,6 +39,8 @@ module.exports = {
         exclude: /node_modules/,
         include: path.resolve(__dirname, "src/styles"),
       },
+
+
     ],
   },
 
